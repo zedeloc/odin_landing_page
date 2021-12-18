@@ -19,8 +19,9 @@ body {
   width: 100%;
   height: auto;
 }
-.text {
+.some-text {
   font-size: 18px;
+  padding: 16px 0;
   font-weight: normal;
   color: #e5e7eb;
 }
@@ -37,6 +38,7 @@ ul {
   font-size: 18px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container-2 {
@@ -53,19 +55,19 @@ ul {
 }
 
 .card-holder {
-  width: 960px;
+  width: ;
   padding: 64px;
-  flex: 1;
-  flex-wrap: wrap;
+  flex: 0 1 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
   
 }
 
 .card {
-  width: 200px;
-  flex: 1 0 auto;
+  width: 150px;
+  flex: 0 0 auto;
 }
 
 .card img {
@@ -85,17 +87,20 @@ ul {
   width: 960px;
   padding: 60px;
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
 .quote {
   font-size: 36px;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 10;
+  color:#1f2937
 }
 
 .quote-ee {
-  align-self: flex-start;
+  font-weight: bold;
+  text-align: right;
 }
 .container-4 {
   margin: 32px;
@@ -105,7 +110,8 @@ ul {
 }
 
 .header {
-  flex: 1;
+  width: 960px;
+  flex: ;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,14 +119,16 @@ ul {
 }
 
 .under-head {
+  width: 960px;
+  padding: 64px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .h-card {
   width: 400px;
-  padding: 32px;
+  padding: ;
   flex: 0 0 auto;
 }
 
@@ -139,16 +147,20 @@ ul {
 
 button {
   padding: 8px 24px;
-  border: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
   border-radius: 5px;
   background-color: #3882f6;
   color: #e5e7eb;
   font-weight: bold;
+  flex: 0 1 auto
 }
 
-.modal button {
-  border: 10px;
-  border-color: #e5e7eb;
+.container-1 button {
+  border: 0;
+}
+
+.container-4 button {
 }
 
 .modal {
@@ -161,6 +173,7 @@ button {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 img {
